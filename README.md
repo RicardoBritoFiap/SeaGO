@@ -1,6 +1,5 @@
 # 🌊SeaGO API #
-Esse repositório trás o crud da API referente ao Aproveitamento das Oportunidades de Vendas, que analisa os dados dos clientes e utiliza algoritmos de recomendação para identificar oportunidades de venda cruzadas e adicionais. Dessa forma, são oferecidos produtos ou serviços extras que atendam às necessidades e preferências individuais de cada cliente. Esse processo resulta em uma experiência mais personalizada e relevante, aumentando as taxas de conversão e otimizando as receitas.
-O restante será reservado para apresentar nas Sprints seguintes do Challenge.
+Esse repositório trás a API referente ao Cadastro e Coleta de Dados para o projeto SeaGO, que tem como objetivo utilizar IA para calcular a melhor rota para navios comerciais por todo mundo. A API em qustão vai ser responsavel pelas funções de cadastro, login, locais possiveis para as rotas (Partida e Destino) e detalhes do navio.
 
 👥 **Integrantes do Grupo:**
 
