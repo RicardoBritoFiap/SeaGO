@@ -25,5 +25,5 @@ http://localhost:8080/swagger-ui/index.html#/
 
 
 ## 📊Diagrama de Classe/Modelo Lógico 
-<img src="./diagramas/diagrama de classes.png">
-<img src="./diagramas/diagrama modelo logico.png">
+<img src="./diagramas/">
+<img src="./diagramas/Relational_1.pdf">
