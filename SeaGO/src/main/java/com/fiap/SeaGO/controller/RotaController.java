@@ -2,8 +2,8 @@ package com.fiap.SeaGO.controller;
 
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
-import com.fiap.SeaGO.model.Seago;
-import com.fiap.SeaGO.repository.SeagoRepository;
+import com.fiap.SeaGO.model.Rota;
+import com.fiap.SeaGO.repository.RotaRepository;
 import jakarta.validation.Valid;
 import static org.springframework.http.HttpStatus.NOT_FOUND;
 import java.util.List;
@@ -19,13 +19,13 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 
 @RestController
-@RequestMapping(path = "/Seago")
-public class SeagoController {
+@RequestMapping(path = "/Rota")
+public class RotaController {
     @Autowired
-    private SeagoRepository repository;
+    private RotaRepository repository;
 
     @GetMapping("{id}")
-    public ResponseEntity<Seago> getSeago(@PathVariable Long id) {
+    public ResponseEntity<Rota> getRota(@PathVariable Long id) {
 
         return repository
                 .findById(id)
@@ -34,39 +34,39 @@ public class SeagoController {
     }
 
     @GetMapping
-    public ResponseEntity<List<Seago>> getSeago() {
-        List<Seago> seagos = repository.findAll();
-        return ResponseEntity.ok(seagos);
+    public ResponseEntity<List<Rota>> getRota() {
+        List<Rota> rotas = repository.findAll();
+        return ResponseEntity.ok(rotas);
     }
 
     @PostMapping
-    public ResponseEntity<Seago> createSeago(@RequestBody @Valid Seago seagos) {
-        repository.save(seagos);
-        return ResponseEntity.ok(seagos);
+    public ResponseEntity<Rota> createRota(@RequestBody @Valid Rota rotas) {
+        repository.save(rotas);
+        return ResponseEntity.ok(rotas);
     }
 
     @DeleteMapping("{id}")
-    public ResponseEntity<String> deleteSeago(@PathVariable Long id) {
-        verificarseexisteseago(id);
+    public ResponseEntity<String> deleteRota(@PathVariable Long id) {
+        verificarseexisterota(id);
         repository.deleteById(id);
 
-        return ResponseEntity.ok("Seago deletada com sucesso");
+        return ResponseEntity.ok("Rota deletada com sucesso");
     }
 
     @PutMapping("{id}")
-    public ResponseEntity<Seago> updateSeago(@PathVariable Long id, @RequestBody Seago seago) {
-        verificarseexisteseago(id);
-        seago.setId(id);
-        repository.save(seago);
+    public ResponseEntity<Rota> updateRota(@PathVariable Long id, @RequestBody Rota rota) {
+        verificarseexisterota(id);
+        rota.setId(id);
+        repository.save(rota);
 
-        return ResponseEntity.ok(seago);
+        return ResponseEntity.ok(rota);
     }
 
-    private void verificarseexisteseago(Long id) {
+    private void verificarseexisterota(Long id) {
         repository
                 .findById(id)
                 .orElseThrow(() -> new ResponseStatusException(
                         NOT_FOUND,
-                        "id da Seago não encontrado"));
+                        "id da Rota não encontrado"));
     }
 }

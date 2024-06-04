@@ -9,32 +9,27 @@ import lombok.Data;
 
 @Entity
 @Data
-public class Navio {
+public class Rota {
     
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
 
     @NotBlank
-    private String nome;
+    private String descricao;
 
     @NotBlank
-    private String capacidade_carga;
+    private String porto_origem;
 
     @NotBlank
-    private String comprimento_navio;
+    private String porto_destino;
 
     @NotBlank
-    private String largura_navio;
-
+    private String duracao;
+    
     @NotBlank
-    private String profundidade_navio;
-
+    private String distancia;
+    
     @NotBlank
-    private String altura_navio;
-
-    @NotBlank
-    private String ultima_manutencao;
-
-    //Rota
+    private String condicao_meteorologica;
 }
