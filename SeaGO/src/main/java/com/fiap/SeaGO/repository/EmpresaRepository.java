@@ -5,5 +5,5 @@ import com.fiap.SeaGO.model.Empresa;
 
 
 public interface EmpresaRepository extends JpaRepository<Empresa, Long>{
-    public Empresa findByCnpjAndEmail(String cnpj, String email);
+    public Empresa findByCnpjAndSenha(String cnpj, String senha);
 } 
