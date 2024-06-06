@@ -1,5 +1,7 @@
 package com.fiap.SeaGO.model;
 
+import java.sql.Date;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -40,6 +42,6 @@ public class Navio {
     private String altura_navio;
 
     @NotBlank
-    private String ultima_manutencao;
+    private Date ultima_manutencao;
 
 }

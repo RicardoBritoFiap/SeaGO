@@ -9,10 +9,12 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import lombok.Builder;
 import lombok.Data;
 
 @Entity
 @Data
+@Builder
 public class Seago {
     
     @Id
