@@ -13,7 +13,7 @@ Esse repositório trás a API referente ao Cadastro e Coleta de Dados para o pro
 
 - RM98370 - Ricardo Brito Ponticelli Prieto
 
-## [🎬Link do Vídeo Pitch]() ##
+## [🎬Link do Vídeo Pitch](https://youtu.be/R7k_5BbKPnA) ##
 
 ## [🎬Link do Vídeo de Explicação do Código Fonte](https://youtu.be/Ik7OzAqrCnA) ##
 
