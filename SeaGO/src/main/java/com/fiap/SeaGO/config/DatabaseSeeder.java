@@ -20,11 +20,10 @@ public class DatabaseSeeder implements CommandLineRunner {
         seagoRepository.saveAll(
             List.of(
             Seago.builder()
-                    .id(1L)
                     .email("seago.org@gmail.com")
                     .site("http:seagoia.com.br")
                     .telefone("+55 11 11111-1111")
-                    .status("Ativa")
+                    .status("Calculando a rota mais eficiente")
                     .descricao("A melhor solução na área de navegação")
                     .build()
         ));

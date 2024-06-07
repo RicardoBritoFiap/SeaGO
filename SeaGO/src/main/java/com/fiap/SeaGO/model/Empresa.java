@@ -7,6 +7,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -27,18 +28,23 @@ public class Empresa {
     private String cnpj;
 
     @Email
+    @Size(min = 3, max = 255)
     private String email;
 
     @NotBlank
+    @Size(min = 3, max = 255)
     public String senha;
         
     @NotBlank
+    @Size(min = 3, max = 255)
     private String nome;
 
     @NotBlank
+    @Size(min = 3, max = 255)
     private String setor_de_atuacao;
 
     @NotBlank
+    @Size(min = 3, max = 255)
     private String tipo_de_carga;
 
 }
