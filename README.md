@@ -15,7 +15,7 @@ Esse repositório trás a API referente ao Cadastro e Coleta de Dados para o pro
 
 ## [🎬Link do Vídeo Pitch]() ##
 
-## [🎬Link do Vídeo de Explicação do Código Fonte]() ##
+## [🎬Link do Vídeo de Explicação do Código Fonte](https://youtu.be/Ik7OzAqrCnA) ##
 
 # [📋Endpoints da API] #
 

@@ -48,7 +48,7 @@ public class Navio {
     @Size(min = 1, max = 15)
     private String altura_navio;
 
-    @NotBlank
+    
     private LocalDate ultima_manutencao;
 
     @ManyToOne
