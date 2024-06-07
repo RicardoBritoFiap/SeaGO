@@ -1,9 +1,6 @@
 package com.fiap.SeaGO.model;
 
-import java.sql.Date;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
-
+import java.time.LocalDate;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -52,8 +49,7 @@ public class Navio {
     private String altura_navio;
 
     @NotBlank
-    @JsonFormat(pattern = "dd/MM/yyyy")
-    private Date ultima_manutencao;
+    private LocalDate ultima_manutencao;
 
     @ManyToOne
     private Empresa empresa;
